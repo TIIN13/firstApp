@@ -1,0 +1,12 @@
+<ion-view>
+  <ion-content>
+    <ion-list ng-repeat="todo in todos">
+      <ion-item>
+        {{todo.title}}
+        <ion-option-button ng-click="deleteTodo(todo)" class="button-info button-balanced">
+          Done
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
