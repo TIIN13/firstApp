@@ -1,5 +1,6 @@
-<ion-view>
+<ion-view> <!-- REMEMBER ion-view and ion-content -->
   <ion-content>
+    <!-- This is "List" where we got labels and input for our login page -->
     <div class="list">
       <label class="item item-input item-floating-label">
         <span class="input-label">Username</span>
@@ -9,6 +10,7 @@
         <span class="input-label">Password</span>
         <input type="password" placeholder="Password">
       </label>
+      <!-- This is the button and ng-click is the function from our LoginCtrl in the loginController.js file-->
       <button ng-click="login()" class="button button-full button-dark">
        Login
       </button>

@@ -1,8 +1,18 @@
-<ion-view>
+<ion-view> <!-- REMEMBER ion-view and ion-content -->
   <ion-content>
+    <!-- the ion-list equivalent to a <ul> tag
+
+    ng-repeat is our loop where we runs through todos defined in TodoCtrl inside todoController.js
+    -->
     <ion-list ng-repeat="todo in todos">
+      <!-- the ion-item equivalent to <li> tag
+      here we access the todo object from ion-list and prints the title, look in the todoController.js for this
+      -->
       <ion-item>
         {{todo.title}}
+        <!-- the "done" button to remove an object from our list array
+        Here we pass the todo object to our deleteTodo function in TodoCtrl inside todoController.js
+        -->
         <ion-option-button ng-click="deleteTodo(todo)" class="button-info button-balanced">
           Done
         </ion-option-button>
